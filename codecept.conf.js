@@ -14,6 +14,7 @@ exports.config = {
       windowSize: '1200x900',
       waitForNavigation: 'networkidle0',
       waitForAction: '500',
+      waitForElement: '5000'
     },
   },
   include: {

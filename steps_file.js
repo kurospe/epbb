@@ -3,11 +3,10 @@
 module.exports = function() {
   return actor({
       login: function (username, password) {
-        this.fillField('Username', username);
+        this.fillField('Username/Email', username);
         this.fillField('Password', password);
-        this.click('Submit');
-        this.waitForElement('.ant-breadcrumb-link');
-        this.see('Dashboard');
+        this.click('Login');
+        this.waitForElement('.navbar-text', 10)
       }
 
     // Define custom steps here, use 'this' to access default methods of I.
